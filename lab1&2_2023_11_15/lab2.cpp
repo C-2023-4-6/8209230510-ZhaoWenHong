@@ -50,7 +50,10 @@ int lab2_4() {
 	case '+':cout << x + y << endl; break;
 	case '-':cout << x - y << endl; break;
 	case '*':cout << x * y << endl; break;
-	case '/':cout << x / y << endl; break;
+	case '/': {if (y != 0)
+						cout << x / y << endl;
+					else cout << "除数为零" << endl;
+					break; }
 	case '%':cout << int(x) % int(y) << endl; break;
 	default: {cout << "非法字符" << endl; break; }
 	}

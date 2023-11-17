@@ -44,7 +44,7 @@ int lab1_4() {
 	double x = 13.456;
 	int y = int(x);
 	cout << "转换前"<<x << endl;
-	cout << "转换后"<<y << endl;
+	cout << "转换后"<<dec<<y << endl;
 	return 0;
 }
 
